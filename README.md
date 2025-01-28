@@ -10,7 +10,7 @@ To integrate the `randomize-apps-otree` app into your oTree project, follow thes
 1. **Add the App to Your Project:**
    Ensure that the `randomize-apps-otree` app is included in your oTree project directory.
 2. **Add the API to Your Project:**
-   You must also add the folder `randomise_apps_api`, this will allow you to import the `RandomisedAppPage`, as
+   You must also add the folder `randomize_apps_api`, this will allow you to import the `RandomizedAppPage`, as
    explained below.
 3. **Update `settings.py`:**
    Add `randomize-apps-otree` to the `SESSION_CONFIGS` in your `settings.py` file. You can configure the session
@@ -33,7 +33,7 @@ To integrate the `randomize-apps-otree` app into your oTree project, follow thes
    randomize.The randomize - apps - otree app should be the first app in the sequence.
 2. You must use `RandomAppPage` instead of`Page` in every page that might exit an app(e.g, the past page of the app, or
    a page with an exiting condition).All you need to do is to import it with
-   `from randomise_apps_api.api import RandomAppPage`.
+   `from randomize_apps_api.api import RandomAppPage`.
 
 3. Modify App Pages: In each app that you want to randomize, ensure that the last page or any page with a condition to
    exit the app includes the`app_after_this_page`method. This method should return the next app in the randomized
@@ -41,7 +41,7 @@ To integrate the `randomize-apps-otree` app into your oTree project, follow thes
 
 ```python
 from typing import List
-from randomise_apps_api.api import *
+from randomize_apps_api.api import *
 
 
 class SomePage(RandomAppPage):
@@ -52,18 +52,19 @@ class SomePage(RandomAppPage):
 
 ## Modify the randomisation
 
-* If you need to adapt the randomisation mechanism, all you need to do is to modify the `randomise_apps` function in
+* If you need to adapt the randomisation mechanism, all you need to do is to modify the `randomize_apps` function in
   `randomize-apps-otree/__init__.py`.
-* If you would like to randomise per group of participants, then you might need to make some changes to the
+* If you would like to randomize per group of participants, then you might need to make some changes to the
   `C.PLAYERS_PER_GROUP` constant in `randomize-apps-otree/__init__.py`, and add a WaitPage, so that participants are
   grouped in your desired way.
+* **DO NOT** modify the name of the app `randomize_apps_otree`.
 
 ## Test
 
 This repository comes with a test configuration so that you can see how the app works, and make any necessary
 modifications to adapt it to your needs. All you need to do is run the otree development server with
 ``otree devserver``. In the admin page you will be able to run the `Randomized Apps` demo experiment, which will lead
-you through 3 pages in a randomised order with the names of `test_app1`, `test_app2`, `test_app3`. You should see that
+you through 3 pages in a randomized order with the names of `test_app1`, `test_app2`, `test_app3`. You should see that
 the order is (at least with a probability of 1 - (1/6)) not the same for all participants.
 
 **Important:** To be able to run the test you **must** set the `OTREE_ADMIN_PASSWORD` and `OTREE_SECRET_KEY`

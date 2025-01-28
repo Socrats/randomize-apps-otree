@@ -2,10 +2,10 @@ from os import environ
 
 SESSION_CONFIGS = [
     {
-        'name': 'randomized_apps',
-        'display_name': "Randomized Apps",
+        'name': 'randomize_apps',
+        'display_name': "Randomize Apps",
         'num_demo_participants': 4,
-        'app_sequence': ['randomize-apps-otree', 'test_app1', 'test_app2', 'test_app3'],
+        'app_sequence': ['randomize_apps_otree', 'test_app1', 'test_app2', 'test_app3'],
     }
 ]
 
@@ -18,7 +18,7 @@ SESSION_CONFIG_DEFAULTS = dict(
     real_world_currency_per_point=1.00, participation_fee=0.00, doc=""
 )
 
-PARTICIPANT_FIELDS = ['randomised_app_sequence']
+PARTICIPANT_FIELDS = ['randomized_app_sequence']
 SESSION_FIELDS = []
 
 # ISO-639 code

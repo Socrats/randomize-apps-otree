@@ -15,7 +15,7 @@ class RandomAppPage(Page):
             return
 
         current_app = self.participant._current_app_name
-        app_sequence = self.participant.vars.get('randomised_app_sequence', [])
+        app_sequence = self.participant.vars.get('randomized_app_sequence', [])
         current_app_index = app_sequence.index(current_app)
         upcoming_apps = app_sequence[current_app_index + 1:]
 

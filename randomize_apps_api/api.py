@@ -1,0 +1,1 @@
+from randomize_apps_api.abstract import RandomAppPage
