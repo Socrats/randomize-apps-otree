@@ -42,7 +42,6 @@ DEMO_PAGE_INTRO_HTML = """
 Here are some oTree games.
 """
 
-
-SECRET_KEY = '{{ secret_key }}'
+SECRET_KEY = environ.get('OTREE_SECRET_KEY')
 
 INSTALLED_APPS = ['otree']
