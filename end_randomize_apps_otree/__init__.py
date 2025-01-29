@@ -46,8 +46,6 @@ randomisation to different participants, according to your criteria.
 class RandomizeApps(RandomAppPage):
     @staticmethod
     def is_displayed(player):
-        print("End randomize")
-        print(player.participant.vars['randomized_app_sequence'])
         return True
 
     @staticmethod

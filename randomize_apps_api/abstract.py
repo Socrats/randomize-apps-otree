@@ -18,14 +18,11 @@ class RandomAppPage(Page):
         app_sequence = self.participant.vars.get('randomized_app_sequence', [])
         if current_app != "begin_randomize_apps_otree":
             current_app_index = app_sequence.index(current_app)
-            print(current_app_index, len(app_sequence))
             if current_app_index == len(app_sequence) - 1:
                 return "end_randomize_apps_otree"
             else:
                 upcoming_apps = app_sequence[current_app_index + 1:]
-            print(f"upcoming apps {upcoming_apps}")
         else:
-            print(f"Randomize app with sequence {app_sequence}")
             upcoming_apps = app_sequence
 
         app_to_skip_to = self.call_user_defined('app_after_this_page', upcoming_apps)
@@ -36,12 +33,9 @@ class RandomAppPage(Page):
             return get_min_idx_for_app(self.participant._session_code, app_to_skip_to)
 
     def _increment_index_in_pages(self):
-        print("Incrementing page index")
         # when is this not the case?
         participant = self.participant
         assert self._index_in_pages == participant._index_in_pages
-
-        print(f"index_in_page={self._index_in_pages}")
 
         # we should allow a user to move beyond the last page if it's mturk
         # also in general maybe we should show the 'out of sequence' page
@@ -54,12 +48,11 @@ class RandomAppPage(Page):
 
         ## MODIFIED HERE! now it iterates through all pages, since it's possible to return to a previous page
         for page_index in range(
-            # go to max_page_index+2 because range() skips the last index,
-            # and it's possible to go to max_page_index + 1 (OutOfRange)
-            1,
-            participant._max_page_index + 2,
+                # go to max_page_index+2 because range() skips the last index,
+                # and it's possible to go to max_page_index + 1 (OutOfRange)
+                1,
+                participant._max_page_index + 2,
         ):
-            print(f"page_index={page_index}")
             participant._index_in_pages = page_index
             if page_index == participant._max_page_index + 1:
                 # break and go to OutOfRangeNotification

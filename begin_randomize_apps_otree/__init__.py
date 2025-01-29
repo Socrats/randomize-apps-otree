@@ -92,8 +92,6 @@ class RandomizeApps(RandomAppPage):
 
         participant.vars['randomized_app_sequence'] = apps_to_randomize
 
-        print(participant.vars['randomized_app_sequence'])
-
         return {}
 
     @staticmethod

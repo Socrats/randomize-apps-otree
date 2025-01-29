@@ -30,16 +30,9 @@ class Group(BaseGroup):
 ## Pages
 class Test2(RandomAppPage):
     @staticmethod
-    def is_displayed(player):
-        print("Test 2")
-        print(player.participant.vars['randomized_app_sequence'])
-        return True
-
-    @staticmethod
     def app_after_this_page(player, upcoming_apps):
         try:
             upcoming_app = upcoming_apps[0]
-            print(f"test 2 upcoming_app={upcoming_app}")
         except IndexError:
             upcoming_app = upcoming_apps
         return upcoming_app

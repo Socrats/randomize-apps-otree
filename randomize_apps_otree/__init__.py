@@ -79,8 +79,6 @@ class RandomizeApps(RandomAppPage):
         # Now we randomize
         randomize_apps(participant.vars['randomized_app_sequence'])
 
-        print(participant.vars['randomized_app_sequence'])
-
         return {}
 
     @staticmethod
