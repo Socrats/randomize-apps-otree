@@ -104,8 +104,8 @@ These markers define which apps in `app_sequence` should be randomized. Below ar
 
 1. Configure Session Settings: Ensure that the `app_sequence` in the session configuration includes the apps you want to
    randomize between the apps `begin-randomize-apps-otree` and `end-randomize-apps-otree`. The `begin-randomize-apps-otree` app should be the first app in the sequence.
-2. You must use `RandomAppPage` instead of`Page` in every page that might exit an app(e.g, the past page of the app, or
-   a page with an exiting condition).All you need to do is to import it with
+2. You must use `RandomAppPage` instead of`Page` in every page that might exit an app (e.g, the past page of the app, or
+   a page with an exiting condition). All you need to do is to import it with
    `from randomize_apps_api.api import RandomAppPage`.
 
 3. Modify App Pages: In each app that you want to randomize, ensure that the last page or any page with a condition to
@@ -157,7 +157,7 @@ Make sure to describe concisely what happened, and provide enough information to
 
 ## Acknowledgements
 
-If you find this repository useful, please start it on Github, and cite it in your articles with BibTeX:
+If you find this repository useful, please star it on Github, and cite it in your articles with BibTeX:
 
 ```TeX
 @software{elias_fernandez_2025_14763626,
