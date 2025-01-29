@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14763626.svg)](https://doi.org/10.5281/zenodo.14763626)
+
 # Randomized App Sequencing for oTree
 
 This module extends oTree to allow for **randomized app sequencing**, **wait pages**, and **partial app randomization**
@@ -155,4 +157,23 @@ Make sure to describe concisely what happened, and provide enough information to
 
 ## Acknowledgements
 
-If you find this repository useful, please start it on Github, and cite it in your articles.
+If you find this repository useful, please start it on Github, and cite it in your articles with BibTeX:
+
+```TeX
+@software{elias_fernandez_2025_14763626,
+  author       = {Fernández Domingos, Elias},
+  title        = {randomize-apps-otree: Randomized App Sequencing for oTree},
+  month        = jan,
+  year         = 2025,
+  publisher    = {Zenodo},
+  version      = {v0.1.0},
+  doi          = {10.5281/zenodo.14763626},
+  url          = {https://doi.org/10.5281/zenodo.14763626},
+}
+```
+
+or in text format:
+
+```
+Fernández Domingos, E. (2025). randomize-apps-otree: Randomized App Sequencing for oTree (v0.1.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.14763626
+```
