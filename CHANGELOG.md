@@ -16,13 +16,13 @@ All notable changes to this project will be documented in this file.
 
 ---
 
-## 🔄 How to Upgrade
+### 🔄 How to Upgrade
 1. Update your `app_sequence` configurations to use `begin_randomize_apps_otree` and `end_randomize_apps_otree` instead of `randomize-app-otree`.
 2. If using wait pages, ensure your app logic accounts for players reaching the wait page at different times.
 
 ---
 
-## 📌 Notes
+### 📌 Notes
 - There are **five test apps**: `test_app1`, `test_app2`, `test_app3`, `test_app4`, and `test_app5`.
 - To ensure compatibility, test your updated `app_sequence` before deployment.
 - If you encounter issues, review how `_increment_index_in_pages` affects page iteration.
