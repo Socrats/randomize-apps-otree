@@ -1,0 +1,12 @@
+{{ block title }}randomize{{ endblock }}
+{% block content %}
+    <script>
+        // Delay in milliseconds (e.g., 5000 = 5 seconds)
+        const delay = 0;
+
+        // Function to auto-submit the form
+        setTimeout(() => {
+            document.querySelector("form").submit();
+        }, delay);
+    </script>
+{% endblock %}

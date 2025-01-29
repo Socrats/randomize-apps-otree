@@ -5,7 +5,21 @@ SESSION_CONFIGS = [
         'name': 'randomize_apps',
         'display_name': "Randomize Apps",
         'num_demo_participants': 4,
-        'app_sequence': ['randomize_apps_otree', 'test_app1', 'test_app2', 'test_app3'],
+        'app_sequence': ['begin_randomize_apps_otree', 'test_app1', 'test_app2', 'test_app3', 'end_randomize_apps_otree'],
+    },
+    {
+        'name': 'randomize_apps_with_wait_page',
+        'display_name': "Randomize Apps with a WaitPage",
+        'num_demo_participants': 4,
+        'app_sequence': ['begin_randomize_apps_otree', 'test_app1', 'test_app2', 'test_app4',
+                         'end_randomize_apps_otree'],
+    },
+    {
+        'name': 'mix_randomize_apps',
+        'display_name': "Randomize Apps only some apps",
+        'num_demo_participants': 4,
+        'app_sequence': ['begin_randomize_apps_otree', 'test_app1', 'test_app2', 'test_app3',
+                         'end_randomize_apps_otree', 'test_app5'],
     }
 ]
 

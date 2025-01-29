@@ -4,13 +4,13 @@ from randomize_apps_api.api import *
 
 
 class C(BaseConstants):
-    NAME_IN_URL = 'test_app3'
+    NAME_IN_URL = 'test_app4'
 
     # Default values that need to be set in the session config
     NUM_ROUNDS = 1
 
     # You can edit this in case you want to randomize apps for groups of participants
-    PLAYERS_PER_GROUP = None
+    PLAYERS_PER_GROUP = 2
 
 
 ## Models
@@ -28,10 +28,14 @@ class Group(BaseGroup):
 
 
 ## Pages
-class Test3(RandomAppPage):
+class WaitBeforeApp(WaitPage):
+    pass
+
+
+class Test4(RandomAppPage):
     @staticmethod
     def is_displayed(player):
-        print("Test 3")
+        print("Test 4")
         print(player.participant.vars['randomized_app_sequence'])
         return True
 
@@ -45,4 +49,4 @@ class Test3(RandomAppPage):
         return upcoming_app
 
 
-page_sequence = [Test3]
+page_sequence = [WaitBeforeApp, Test4]
