@@ -1,0 +1,23 @@
+randomize-apps-otree: Randomized App Sequencing for oTree
+Copyright 2025 Elias Fernández Domingos
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at:
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+---
+
+This project includes contributions from:
+- Elias Fernández Domingos (elias.fernandez.domingos@vub.be)
+
+Additional acknowledgments:
+- This software was developed at AI Lab, Vrije Universiteit Brussel.
+- Based on the oTree framework (https://www.otree.org/).
