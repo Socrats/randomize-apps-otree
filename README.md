@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14763626.svg)](https://doi.org/10.5281/zenodo.14763626)
+
 # Randomized App Sequencing for oTree
 
 This module extends oTree to allow for **randomized app sequencing**, **wait pages**, and **partial app randomization**
@@ -102,8 +104,8 @@ These markers define which apps in `app_sequence` should be randomized. Below ar
 
 1. Configure Session Settings: Ensure that the `app_sequence` in the session configuration includes the apps you want to
    randomize between the apps `begin-randomize-apps-otree` and `end-randomize-apps-otree`. The `begin-randomize-apps-otree` app should be the first app in the sequence.
-2. You must use `RandomAppPage` instead of`Page` in every page that might exit an app(e.g, the past page of the app, or
-   a page with an exiting condition).All you need to do is to import it with
+2. You must use `RandomAppPage` instead of`Page` in every page that might exit an app (e.g, the past page of the app, or
+   a page with an exiting condition). All you need to do is to import it with
    `from randomize_apps_api.api import RandomAppPage`.
 
 3. Modify App Pages: In each app that you want to randomize, ensure that the last page or any page with a condition to
@@ -155,4 +157,23 @@ Make sure to describe concisely what happened, and provide enough information to
 
 ## Acknowledgements
 
-If you find this repository useful, please start it on Github, and cite it in your articles.
+If you find this repository useful, please star it on Github, and cite it in your articles with BibTeX:
+
+```TeX
+@software{elias_fernandez_2025_14763626,
+  author       = {Fernández Domingos, Elias},
+  title        = {randomize-apps-otree: Randomized App Sequencing for oTree},
+  month        = jan,
+  year         = 2025,
+  publisher    = {Zenodo},
+  version      = {v0.1.0},
+  doi          = {10.5281/zenodo.14763626},
+  url          = {https://doi.org/10.5281/zenodo.14763626},
+}
+```
+
+or in text format:
+
+```
+Fernández Domingos, E. (2025). randomize-apps-otree: Randomized App Sequencing for oTree (v0.1.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.14763626
+```

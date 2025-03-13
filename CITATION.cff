@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+title: 'randomize-apps-otree: Randomized App Sequencing for oTree'
+abstract: >-
+  This module extends oTree to allow for randomized app sequencing, wait pages,
+  and partial app randomization in oTree >= 5.4.0.
+message: >-
+  Please cite this software using the metadata from 'preferred-citation'.
+type: software
+authors:
+  - family-names: "Fernández Domingos"
+    given-names: "Elias"
+    orcid: "https://orcid.org/0000-0002-4717-7984"
+    affiliation: "AI Lab, Vrije Universiteit Brussel"
+    email: "elias.fernandez.domingos@vub.be"
+keywords:
+  - oTree
+  - Behavioural Experiments
+version: 0.1.0
+doi: "10.5281/zenodo.14763626"
+date-released: "2025-01-29"
+url: "https://github.com/Socrats/randomize-apps-otree"
+license: "Apache-2.0"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Fernández Domingos"
+      given-names: "Elias"
+      orcid: "https://orcid.org/0000-0002-4717-7984"
+  title: "randomize-apps-otree: Randomized App Sequencing for oTree"
+  publisher: "Zenodo"
+  date-released: "2025-01-29"
+  version: "0.1.0"
+  url: "https://doi.org/10.5281/zenodo.14763626"
